@@ -1,0 +1,11 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Controllers\\": "controllers/",
+      "Models\\": "models/"
+    }
+  },
+  "require": {
+    "illuminate/container": "^5.2"
+  }
+}
