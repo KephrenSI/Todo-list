@@ -21,10 +21,10 @@ if (!in_array($method . '/' . $r . '/' . $a, $routes)) {
 
 $controller_name = 'Controllers\\' . ucfirst($r) . 'Controller';
 
-$container = new \Illuminate\Container\Container();
-$controller = $container->make($controller_name);
+// $container = new \Illuminate\Container\Container();
+// $controller = $container->make($controller_name);
 
-//$controller = new $controller_name;
+$controller = new $controller_name;
 
 $data = call_user_func([$controller, $a]);
 
